@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .output-as-input {
+            display: block;
+            width: 170px;
+            height: 21px;
+            border: 1px inset lightgray;
+          }
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" oninput="x.value=parseInt(a.value)">
+        <div>
+            <label for="browser">Browser:</label>
+            <input type="text" name="txtBrowser" list="browser">
+            <datalist id="browser">
+                <option value="chrome">Chrome</option>
+                <option value="edge">Edge</option>
+                <option value="FireFox">FireFox</option>
+                <option value="opera">Opera</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="txtUsername" id="username">
+        </div>
+        <div>
+            <label for="encryption">Encription:</label>
+            <select name="encryption" id="encryption" style="width: 150px;">
+                <option value="2048">2048 (High Grade)</option>
+            </select>
+        </div>
+        <div>
+            0<input type="range" name="a" id="a">100
+            <output class="output-as-input" name="x" for="a"></output>
+        </div>
+        <div>
+            <label for="birth">Birthday:</label>
+            <input type="date" name="txtBirth" id="birth" style="width: 140px;">
+        </div>
+        <div>
+            <label for="color">Select your favorite color:</label>
+            <input type="color" name="txtColor" id="color" value="#ff0000">
+        </div>
+        <div>
+            <label for="Birthday">Birthday (month and year):</label>
+            <input type="month" name="txtBirth" id="Birthday">
+        </div>
+        <div>
+            <label for="Birthday">Birthday (month and year):</label>
+            <input type="month" name="txtBirth" id="Birthday">
+        </div>
+        <div>
+            <label for="week">Select a week:</label>
+            <input type="week" name="txtWeek" id="week">
+        </div>
+        <div>
+            <label for="time">Select a time:</label>
+            <input type="time" name="txtTime" id="time">
+        </div>
+        <div>
+            <label for="Birthday">Birthday (date and time):</label>
+            <input type="datetime" name="txtBirth" id="Birthday">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="txtEmail" id="email">
+        </div>
+        <div>
+            <label for="search">Search Google:</label>
+            <input type="search" name="txtSearch" id="search">
+        </div>
+        <div>
+            <label for="tel">Telephone:</label>
+            <input type="tel" name="txtTel" id="tel">
+        </div>
+        <div>
+            <label for="url">Add your homepage:</label>
+            <input type="url" name="txtUrl" id="url">
+        </div>
+        <input type="submit" value="submit">
+    </form>
+    <p style="margin-top: 10px;"><strong>Note: </strong>The datalist tag is not supported in Safari or IE9(and earlier)</p>
+</body>
+
+</html>
