@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid darkmagenta;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .top-half-opacity {
+            /*Này là phần code giống mẫu*/
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(246, 164, 1, 1));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            /*Trình bày lại cho đẹp*/
+            font-weight: bold;
+            margin-left: 60px;
+        }
+        p{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body style="width: 40%;">
+    <div>
+        <p>
+            <span
+                style="text-shadow: 0px 4px 1px #96c438,-2px -4px 1px #fa0082,3px -4px 1px orange; font-weight: bold; margin: 20px;">Colorful
+                Style</span>
+            <span style="background-color: #d8bbb7; color: darkmagenta; font-weight: bold; margin-right: 70px;">Inset Style</span>
+            <span style="text-shadow: 0px -10px 0 #fa0082;">Double Font</span>
+        </p>
+        <p style="display: inline-block;">
+            <span class="top-half-opacity">Glossy Style</span>
+        <div style="position:relative;
+            font-weight: bold;
+            color:red;
+            background: #000;
+            display: inline-block;
+            font-size: 20px;
+            padding: 2px;
+            margin:0px 30px;">Grunge Style
+            <span style="position:absolute;
+            display:block;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            z-index: 21;
+            background: url(images/grunge.png);
+            "></span>
+        </div>
+        <span style="text-shadow: 0 0 7px #1E90FF;
+            background:#000000;
+            color: #1E90FF;
+            margin-left: 50px;">Neon Flow</span>
+        </p>
+    </div>
+    <div style="background-color: darkmagenta; margin-top: 3px;">
+        <p style="color: #fff; text-align: center; font-size: 30px; margin: 10px;">Cool CSS Text Effects</p>
+    </div>
+</body>
+
+</html>
